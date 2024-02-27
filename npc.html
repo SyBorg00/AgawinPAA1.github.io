@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "terrastyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >       
+    </head>
+        <body style="background-image: url(BG/day-bg.gif); background-size: cover; background-repeat: no-repeat;">
+
+            <!--Header-->
+            <header id="title">
+                <a href="https://www.terraria.org/"><img src="TerraImage/Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
+            </header>
+
+            <!--Navigation System-->
+            
+            <ul id="nav">
+                <li onclick="goToAbout()">About</li>
+                <li onclick="goToVer()"> Version History</li>
+                <li onclick="goToGame()"> Game Modes</li>
+                <li onclick="goToBoss()"> Bosses</li>
+                <li onclick="goToNPC()"> NPCs</li>
+
+                <script src="terraSlideJS/scroll.js"></script>
+            </ul>
+            
+            <div id="main">
+
+                <div id="modes"><h1>NPCS</h1></div>
+
+
+                <div class="about-textbox">
+                    <h2>
+                        NPCs are friendly entities within the game that can help aid in you in your exploration progress. Some of them 
+                        can provide useful tips on how to be efficient in the game. While others can provide you with useful items in exchange
+                        of some money. Each NPCs, with the exception of some, require a home to be fully present within your world. So make sure
+                        that you can build vacant houses for each of the NPCs to appear. Additionally, each of the NPCs will spawn when certain
+                        conditions are met, like defeating a boss, having possession of certain items, etc. And finally in the latest verion,
+                        each NPC will have a different 'happiness factor' depending on what biome they are currently living in. So take note of
+                        that as well.<br><br><br>
+
+                        <img src="TerraIcons/npcs.webp" style=" width: 200px; height: 200px;"><br><br>
+                        This page will contain a tidbit information of every NPCs that the player can acquire, and ways on how to obtain each one of them.
+                    </h2>     
+                </div>
+
+                
+                <div id="npc-div">
+                    <h1 id = "npc-name">Select an NPC Icon</h1>
+
+                    <div id="npc-display" style="width: 100%; height: 300px; background-color: #5a433a; display: none; border-radius: 20px; border-style: outset;
+                    overflow: auto;">
+                        
+                        <div id = "display-npc-img"></div>
+                        <h2 id = display-npc-desc></h2>
+                    </div>
+
+                <img src="TerraIcons/guide.webp" class="icon npc-img" id="guide" onclick="npcDisplay('guide')">
+                <img src="TerraIcons/merchant.webp" class="icon npc-img" id="merchant" onclick="npcDisplay('merchant')">
+                <img src="TerraIcons/nurse.webp" class="icon npc-img" id="nurse" onclick="npcDisplay('nurse')">      
+                <img src ="TerraIcons/mechanic.webp" class="icon npc-img" id="mechanic" onclick="npcDisplay('mechanic')">
+                <img src ="TerraIcons/dryad.webp" class="icon npc-img" id="dryad" onclick="npcDisplay('dryad')">
+                <img src ="TerraIcons/golf.webp" class="icon npc-img" id="golf" onclick="npcDisplay('golf')">
+                <img src ="TerraIcons/tavern.webp" class="icon npc-img" id="tavern" onclick="npcDisplay('tavern')">
+                <img src="TerraIcons/arms-dealer.webp" class="icon npc-img" id="arms-dealer" onclick="npcDisplay('arms-dealer')"> 
+                <img src ="TerraIcons/goblin.webp" class="icon npc-img" id="goblin" onclick="npcDisplay('goblin')">
+                <img src ="TerraIcons/demo.webp" class="icon npc-img" id="demo" onclick="npcDisplay('demo')">
+                <img src ="TerraIcons/zoologist.webp" class="icon npc-img" id="zoologist" onclick="npcDisplay('zoologist')">
+                <img src="TerraIcons/angler.webp" class="icon npc-img" id="angler" onclick="npcDisplay('angler')">
+                <img src="TerraIcons/stylist.webp" class="icon npc-img" id="stylist" onclick="npcDisplay('stylist')">
+                <img src ="TerraIcons/cloth.webp" class="icon npc-img" id="cloth" onclick="npcDisplay('cloth')">
+                <img src="TerraIcons/travel.webp" class="icon npc-img" id="travel" onclick="npcDisplay('travel')">
+                <img src="TerraIcons/doctor.webp" class="icon npc-img" id="doctor" onclick="npcDisplay('doctor')">
+                <img src="TerraIcons/paint.webp" class="icon npc-img" id="paint" onclick="npcDisplay('paint')">
+                <img src="TerraIcons/party.webp" class="icon npc-img" id="party" onclick="npcDisplay('party')">
+                <img src="TerraIcons/pirate.webp" class="icon npc-img" id="pirate" onclick="npcDisplay('pirate')" >
+                <img src="TerraIcons/steam.webp" class="icon npc-img" id="steam" onclick="npcDisplay('steam')">
+                <img src="TerraIcons/dye.webp" class="icon npc-img" id="dye" onclick="npcDisplay('dye')">
+                <img src="TerraIcons/truffle.webp" class="icon npc-img" id="truffle" onclick="npcDisplay('truffle')"> 
+                <img src ="TerraIcons/wizard.webp" class="icon npc-img" id="wizard" onclick="npcDisplay('wizard')">
+                <img src="TerraIcons/cyborg.webp" class="icon npc-img" id="cyborg" onclick="npcDisplay('cyborg')">
+                <img src="TerraIcons/tax.webp" class="icon npc-img" id="tax" onclick="npcDisplay('tax')">
+                <img src ="TerraIcons/princess.webp" class="icon npc-img" id="princess" onclick="npcDisplay('princess')">
+                <img src ="TerraIcons/santa.webp" class="icon npc-img" id="santa" onclick="npcDisplay('santa')">
+
+                <script src="displayNPC.js"></script>
+                </div>
+
+                
+
+                
+            </div>
+
+            
+   
+        </body>
+</html>

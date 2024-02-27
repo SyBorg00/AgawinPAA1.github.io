@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "terrastyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >       
+    </head>
+        <body style="background-image: url(BG/day-bg.gif); background-size: cover; background-repeat: no-repeat;">
+
+            <!--Header-->
+            <header id="title">
+                <a href="https://www.terraria.org/"><img src="TerraImage/Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
+            </header>
+
+            <!--Navigation System-->
+            
+            <ul id="nav">
+                <li onclick="goToAbout()">About</li>
+                <li onclick="goToVer()"> Version History</li>
+                <li onclick="goToGame()"> Game Modes</li>
+                <li onclick="goToBoss()"> Bosses</li>
+                <li onclick="goToNPC()"> NPCs</li>
+
+                <script src="terraSlideJS/scroll.js"></script>
+            </ul>
+            
+            <div id="main">
+
+                <div id="modes"><h1>Game Modes</h1></div>
+
+                <div class="about-textbox">
+                    <h2> Game modes provide the Terrarians with all sorts of uniqueness to their exploration process. From being
+                        able to generate unlimited amount of items, down to elevating the challenge spike to an intense degree,
+                        such modes will make sure that each player can have their own ways of making a more fun journey in their 
+                        playthrough. There are currently four gamemodes avaialable in Terraria, with some having to accessed via a 
+                        secret seed. One can select their preferred gamemode at the world creation menu  <br><br>
+
+                        <img src="TerraImage/ex-journey.png" class="ss-mode"><br><br>
+
+                        Once you have selected your gamemode, you cannot change it anymore, so make sure to choose wisely... Below
+                        are the four general gamemodes of Terraria.
+                    </h2>
+       
+                </div>
+
+
+                <!-- Journey Mode-->
+                <div id="mode-j" style="background-image: url('BG/hallow-bg.webp'); background-position: center; background-size: cover;">
+
+                    <h1 style="color:rgb(255, 100, 173)" class="mode-hd">Journey Mode</h1>
+
+                    <div class="mode-txt">
+                    <h2 style="color:rgb(255, 100, 173)">"With great power comes great responsibility"</h2><br>
+
+                    For those who have a habit of collecting stuffs, or have been a fan of Minecraft Creative
+                    Mode, this mode is just for you. On world creation, select <img src="TerraIcons/Journey_Mode.webp" class="icon">
+                    and you'll be good to go.<br><br>
+
+                    <img src="TerraImage/ex-journey.png" class="ss-mode">
+                    <p style="color:rgb(255, 100, 173)">PS: Must require a journey mode character to access</p><br>
+                    Considered to be the "creative mode" of Terraria, players can experience the full content
+                    of the game without having to overcome challenges. Allowing the player a wide array of 
+                    customization options during gameplay, including duplication of items, modification of time and weather,
+                     and difficulty sliders.<br><br>
+
+                     <img src="TerraImage/journeyss1.png"><br>
+
+                     <h2 style="color:rgb(255, 100, 173)">Control how the game flows for you... like a god of this world.</h2>
+    
+                    <br>
+                    </div>
+
+                </div>
+
+                <!-- Classic Mode-->
+                <div id="mode-c" style ="background-image: url('BG/forest-2.webp'); background-position: center; background-size: cover; ">
+
+                    <h1 class="mode-hd">Classic Mode</h1>
+                    <div class="mode-txt">
+
+                        <h2>"Your Journey Begins..."</h2><br><br><br>
+
+                        The standard difficulty for all Terrarians old and new. Just click on
+                        the <img src="TerraIcons/Classic_Mode.png" class="icon"> on world creation, and your first journey will soon begin.<br><br>
+
+                        <img src="TerraImage/ex-classic.png" class="ss-mode"><br>
+                        A difficulty mode that is recommended for new players who wants to explore
+                        the game while facing challenges along the way...
+                        <br>
+                    </div>
+                </div>
+                <!-- Expert Mode-->
+                <div id="mode-e" style="background-image: url('BG/corruption-bg.webp'); background-position: center; background-size: cover;">
+
+                    <h1 style="color:rgb(255, 179, 80)" class="mode-hd">Expert Mode</h1>
+
+                    <div class="mode-txt">
+
+
+                        <h2 style="color:rgb(255, 179, 80)">"Fortune & Glory, Kid."</h2><br>
+
+                        Step up to the challenge and face Expert Mode in your journey. Just select <img src="TerraIcons/Expert_Mode.webp" class="icon">
+                        on world creation and prepare for what is to come in your way<br><br>
+
+                        <img src="TerraImage/ex-expert.png" class="ss-mode"><br>
+
+                        Introducing new boss patterns, deadlier enemenis; this will
+                        make you step up your gameplay even more, while at the same time, rewarding you
+                        with great rewards to collect.<br><br>
+                        <img src="Bag/king.webp" class="icon">
+                        <img src="Bag/eye.webp" class="icon">
+                        <img src="Bag/eow.webp" class="icon">
+                        <img src="Bag/brain.webp" class="icon">
+                        <img src="Bag/skele.webp" class="icon">
+                        <img src="Bag/deer.webp" class="icon">
+                        <img src="Bag/wof.webp" class="icon">
+                        <img src="Bag/queen.webp" class="icon">
+                        <img src="Bag/twin.webp" class="icon">
+                        <img src="Bag/skeleprime.webp" class="icon">
+                        <img src="Bag/destroy.webp" class="icon">
+                        <img src="Bag/plant.webp" class="icon">
+                        <img src="Bag/golem.webp" class="icon">
+                        <img src="Bag/empress.webp" class="icon">
+                        <img src="Bag/lord.webp" class="icon"><br><br>
+
+
+                        <h2 style="color:rgb(255, 179, 80)">So... are you up to to the challenge?</h2>
+                    </div>
+                </div>
+
+                <!--Master Mode-->
+                <div id="mode-m" style="background-image: url('BG/crimson-bg.webp'); background-position: center; background-size: cover;">
+                    <h1 style="color:rgb(255, 55, 55)" class="mode-hd">Master Mode</h1>
+                    <div class="mode-txt">
+                        <h2 style="color:rgb(255, 55, 55)">"Game over man, game over!"</h2>
+                        
+                        <br><br>
+
+                        Expert mode still not enough for you? Then let us introduce Master Mode for you. Just click
+                        on <img src="TerraIcons/Master_Mode.webp" class="icon"> and prepare for the worst...<br><br>
+
+                        <img src="TerraImage/ex-master.png" class="ss-mode"><br>
+
+                        <h3 style="color:rgb(255, 55, 55)">MORE HP, MORE DAMAGE, MORE BRUTALITY THAN EVER!!</h3><BR><br>
+
+                        
+                        Conquer and earn majestic trophies of fallen foes!!<br><br>
+                        <img src="Trophy/king.webp" class="icon">
+                        <img src="Trophy/eye.webp" class="icon">
+                        <img src="Trophy/eat.webp" class="icon">
+                        <img src="Trophy/brain.webp" class="icon">
+                        <img src="Trophy/skele.webp" class="icon">
+                        <img src="Trophy/deer.webp" class="icon">
+                        <img src="Trophy/wof.webp" class="icon">
+                        <img src="Trophy/queen.webp" class="icon">
+                        <img src="Trophy/twin.webp" class="icon">
+                        <img src="Trophy/skeleprime.webp" class="icon">
+                        <img src="Trophy/destroy.webp" class="icon">
+                        <img src="Trophy/plant.webp" class="icon">
+                        <img src="Trophy/golem.webp" class="icon">
+                        <img src="Trophy/empress.webp" class="icon">
+                        <img src="Trophy/cultist.webp" class="icon">
+                        <img src="Trophy/lord.webp" class="icon"><br><br>
+
+                        
+                        <h2 style="color:rgb(255, 55, 55)">"Can you survive the hellscape that is Master Mode?"</h2>
+
+                    </div>
+                </div>
+     
+            </div>
+
+            
+   
+        </body>
+</html>

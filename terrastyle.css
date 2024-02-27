@@ -1,0 +1,483 @@
+
+@font-face{
+    font-family: andyBold;
+    src: url(ANDYB.TTF);
+}
+
+/*For the navigation*/
+body{
+    min-width: 500px;
+    max-width: 3000px;
+}
+
+#nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-left:75px;
+    margin-right: 75px;
+    padding-inline-start: 0px;
+    align-content: center;
+    text-align: center; 
+    height: 50px;
+}
+#nav li{
+    background-color: rgb(124, 155, 255);
+    border-radius: 10px;
+    border-style: outset;
+    border-width: thin;
+    border-collapse: separate;
+    transition: transform .2s;
+    box-sizing: border-box;
+    width: 16%;
+    padding-top: 10px;
+    
+}
+
+#nav li:hover{
+    transform: scale(1.2);
+    border-color: rgb(255, 228, 78);
+    background-color:rgb(255, 228, 78);;
+}
+
+
+#gifs{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+/*For the header*/
+#title{
+    border-radius: 20px;
+    
+}
+/*<----------------------------------General editing section---------------------------->*/
+#gifs{
+    text-align: center;
+    background-image: url('BG/sky-bg.webp');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+body{
+    max-width: 2500px;
+    font-family: andyBold;
+    color: white;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+#title{
+    display: block;
+}
+#main{
+    display: block;
+    height: max-content;
+    position: relative;
+}
+
+#main > *{
+    display: flex;
+    align-self: center;
+    height: max-content;
+    margin: 75px;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    background-color: #5a433a;
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform .2s;
+    
+}
+#text1, #text2, #text3, #text4{
+    overflow: auto;
+    flex: 1 15%;
+    padding: 20px;
+    height: 200px;
+    margin-left: 20px;
+    
+    font-size: 24px;
+}
+
+/*Hiding the ugly scrollbar*/
+#text1::-webkit-scrollbar, #text2::-webkit-scrollbar, #text3::-webkit-scrollbar, #text4::-webkit-scrollbar,
+#mode-j::-webkit-scrollbar, #mode-c::-webkit-scrollbar, #mode-e::-webkit-scrollbar, #mode-m::-webkit-scrollbar,
+#boss-display::-webkit-scrollbar, #npc-display::-webkit-scrollbar, #display-img::-webkit-scrollbar{
+    display: none;
+}
+
+
+/*making the image also scale*/
+#img1, #img2, #img3, #img4{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+       
+}
+
+/*The title of each container*/
+#head1, #head2, #head3, #head4{
+    width: 100%;
+    margin-bottom: 6px;      
+    border-radius: 10px; 
+    padding-left: 6px;   
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: rgb(42, 255, 106);
+}
+
+/*Image manipulation*/
+img{
+    transition: transform .2s;
+}
+
+img:hover:not(img.icon){
+    transform: scale(1.02);
+}
+
+img.icon:hover{
+    transform: scale(1.5);
+}
+
+
+img:not(img#journey-logo):not(img#title-img):not(img.icon):not(img.boss-img){
+    border-radius: 8px;
+    border-style:outset;
+}
+#title-img{
+    border-style: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Makes the boxes scale on hover a bit fir pezzaz*/
+#main > *:hover:not(div#version):not(div#modes){
+    transform: scale(1.05);
+    border-color: rgb(255, 228, 78);
+    border-style: solid;
+}
+
+/*Header for the game modes section*/
+.mode-hd{
+    width: 100%;
+}
+
+
+
+/*<----------------------------------Specific editing section---------------------------->*/
+#gifs, .examples{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    border-style: outset;
+}
+
+#version, #modes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*Specifically manipulating each container*/
+
+.examples{
+    background-image: url('BG/cave-bg.png');
+    background-position: center;
+    border-style: inset;
+    background-size: contain;
+}
+
+#version{
+    background-image: url('BG/forest-bg.png');
+    background-position: center;
+    border-style: inset;
+
+
+}
+
+#first{
+    background-image: url('TerraImage/Terraria1.0.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#second{
+    background-image: url('TerraImage/Terra4.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;  
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#third{
+    background-image: url('TerraImage/Terra8.webp');
+    background-size: cover;
+    background-position: center;
+    border-style: inset; 
+    background-blend-mode: screen;
+    opacity: 0.9;
+}
+
+#final{
+    background-image: url('TerraImage/Terra12.jpg');
+    background-size: cover;
+    background-position: center;
+    border-style: inset;
+    background-blend-mode: screen;
+    opacity: 0.9;
+    
+}
+#modes, #bosses{
+    background-image: url('BG/forest-bg.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border-style: outset;
+}
+.about-textbox{
+    height: max-content;
+    background-image: url(BG/cave-bg.png);
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    border-style: outset;
+    padding: 20px;
+}
+
+
+
+#mode-j, #mode-c, #mode-e, #mode-m{
+    background-size: cover;
+    border-radius: 10px;
+    border-style: outset;
+    padding: 50px;
+    justify-content: center;
+    overflow: auto;
+    height: 400px;
+        
+}
+
+.mode-txt{
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.ss-mode{
+    width: 730px;
+    height: 550px;
+}
+
+#main-boss{
+    padding: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.boss-div{
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('TerraIcons/holder.webp');
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+    margin: 10px;
+}
+
+img.boss-img{
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 30px;
+    width: 75px;
+    height: 75px;
+    
+}
+
+#npc-div{
+    background-image: url('BG/sky-bg.webp');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 20px;
+
+}
+
+img.npc-img{
+    width: 40px;
+    height: 32px;
+    margin: 10px;
+}
+
+
+/*The boss and npc section*/
+
+#boss-display, #npc-display{
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#boss-name, #npc-name{
+    flex: 1 100%;
+    
+}
+
+#display-desc, #display-npc-desc{
+    line-height: 50px;
+    background-color: #5a433a;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 20px;
+    text-align:justify;
+    
+}
+
+.npc-img:hover{
+    background-color: rgb(255, 228, 78);
+    border-radius: 10px;
+}
+
+
+
+
+/*<--------------------------------------------Others------------------------------------------>*/
+ /* Animations*/
+ .active {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+@media(max-width: 3000px){
+    #main, #nav, #title{
+        flex: 1;
+        align-self: center;
+    }
+}
+
+@media(max-width: 1000px){
+    #main > * {
+        margin: 20px;
+        
+    }
+}
+
+@media(max-width: 800px){
+
+    #gifs{
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    #main > * {
+        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        
+    }
+    #text1, #text2, #text3, #text4{
+        flex: 1 100%;
+        font-size:20px;
+        padding: 5px;
+        margin-left: 6px;
+        text-align: center;
+    }
+
+    #head1, #head2, #head3, #head4{
+        margin-bottom: 0px;
+        height: 30px;
+        text-align: center;
+    }
+
+    #img1, #img2, #img3, #img4{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;       
+    }
+    #gifs{
+        flex: 1;
+        display: flex;
+        border-radius: 4px;
+    }
+    #nav{
+        display: flex;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #nav li{
+        width: 200px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 10px;
+
+    }
+
+    #mode-j, #mode-c, #mode-e, #mode-m{
+        padding: 20px;
+    }
+
+    .ss-mode{
+        height: auto;
+        width: 60%;
+    }
+
+    #boss-div{
+        width: 40%;
+        height: 40%;
+    }
+    .about-textbox{
+        margin: 20px;
+        padding: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    img.display-img{
+        width: 40%;
+        height: 40%;
+    }
+    
+
+}
+@media(max-width: 480px){
+    #img1, #img2, #img3, #img4{
+        flex: 1;
+        width: 50%;
+        height: auto;
+        margin-left: 0px;
+    }
+
+}
+
+

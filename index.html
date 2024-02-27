@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "terrastyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >       
+    </head>
+        <body style="background-image: url(BG/day-bg.gif); background-size: cover; background-repeat: no-repeat;">
+
+            <!--Header-->
+            <header id="title">
+                <a href="https://www.terraria.org/"><img src="TerraImage/Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
+            </header>
+
+            <!--Navigation System-->
+            
+            <ul id="nav">
+                <li onclick="goToAbout()">About</li>
+                <li onclick="goToVer()"> Version History</li>
+                <li onclick="goToGame()"> Game Modes</li>
+                <li onclick="goToBoss()"> Bosses</li>
+                <li onclick="goToNPC()"> NPCs</li>
+
+                <script src="terraSlideJS/scroll.js"></script>
+            </ul>
+            
+            <div id="main">
+                
+             
+                <!--About box-->
+                <div id="gifs">
+                    <img src="TerraImage/explore.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <img src="TerraImage/fight.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <img src="TerraImage/build.gif" style="width: 98%; height: auto;" class="gifs fade">
+                    <h1 id="about-txt" style="color: rgb(42, 255, 106);">Build, Fight, and Explore... The Realm of Terraria Awaits you...</h1>
+                    <h3 > Terraria is a 2D action-adventure-sandbox game, developed by Re-LOGIC. First released 
+                        on windows on 2011 and has since been ported to other platforms. The game consist of exploration,
+                         building, painting, combat and so much more...<br>
+    
+                        Sold by over 44 million copies by 2022. It has become one of the best-selling video games of all time... <br><br></h3>
+                    <script src="terraSlideJS/gifSlides.js"></script>
+                </div>
+                <div id="modes"><h1>A Quick Summary</h1></div>
+                <div class="examples">               
+                    <img src="TerraImage/terraria-start.png" style="width: 98%; height: auto;">
+                    <h1 id="about-txt" style="color: rgb(42, 255, 106);">Your journey begins here...</h1>
+                    <h3> You will begin your journey in the middle of a wide forest, only having three trusty tools at your disposal - each
+                        with different purpose. Not only that, you will also be accompanied by your very trusty NPC - The Guide, to help
+                        aid you in your journey. What happens next is up to you, whether you can chop down trees and build a shelter for your 
+                        comfort, or go exploring and gather the necessary resources. You might also encounter monsters along the way, so be
+                        careful.
+                    </h3>
+                </div>
+
+                <div class="examples">
+                    <img src="TerraImage/terraria-challenge.png" style="width: 98%; height: auto;">
+                    <h1 id="about-txt" style="color: rgb(255, 55, 55);">Beware of the night...</h1>
+                    <h3>
+                        The night can be a dangerous place for beginners, as more dangerous monsters would appear at this certain time 
+                        of the day. Either shred through the horde of monsters to explore deeper, or stay at the comfort of your shelter,
+                        for you have the choice to do so... Once sunrise arrives, a new day of productivity will come towards you once more...
+                    </h3>
+                </div>
+
+            </div>
+
+            
+   
+        </body>
+</html>

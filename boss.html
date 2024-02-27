@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "terrastyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >       
+    </head>
+        <body style="background-image: url(BG/day-bg.gif); background-size: cover; background-repeat: no-repeat;">
+
+            <!--Header-->
+            <header id="title">
+                <a href="https://www.terraria.org/"><img src="TerraImage/Terraria-logo.webp" id="title-img" syle="width: 98%; height: auto;"></a>
+            </header>
+
+            <!--Navigation System-->
+            
+            
+            
+            <ul id="nav">
+                <li onclick="goToAbout()">About</li>
+                <li onclick="goToVer()"> Version History</li>
+                <li onclick="goToGame()"> Game Modes</li>
+                <li onclick="goToBoss()"> Bosses</li>
+                <li onclick="goToNPC()"> NPCs</li>
+
+                <script src="displayBoss.js"></script>
+                <script src="terraSlideJS/scroll.js"></script>
+            </ul>
+      
+            <div id="main">
+                
+
+                <div id="modes"><h1> Bosses</h1></div>
+
+
+                <!-- Main Bosses-->
+
+                <div class="about-textbox">
+                    <h2>
+                    Bosses are the main challenges that the Terrarians must go through should they want to progress further
+                    into the game. Depending on the gamemode, each boss will have various healthbars and damage, and will
+                    have modified attack patterns. Each bosses can either be summoned by natural means, or having to summon
+                    them via certin summoning tools. Keep in mind that each boss will have specific summoning condition, so it is
+                    best for you to always be prepared before facing them one-by-one<br><br><br>
+
+                    <img src="Trophy/king.webp" class="icon">
+                    <img src="Trophy/eye.webp" class="icon">
+                    <img src="Trophy/eat.webp" class="icon">
+                    <img src="Trophy/brain.webp" class="icon">
+                    <img src="Trophy/skele.webp" class="icon">
+                    <img src="Trophy/deer.webp" class="icon">
+                    <img src="Trophy/wof.webp" class="icon">
+                    <img src="Trophy/queen.webp" class="icon">
+                    <img src="Trophy/twin.webp" class="icon">
+                    <img src="Trophy/skeleprime.webp" class="icon">
+                    <img src="Trophy/destroy.webp" class="icon">
+                    <img src="Trophy/plant.webp" class="icon">
+                    <img src="Trophy/golem.webp" class="icon">
+                    <img src="Trophy/empress.webp" class="icon">
+                    <img src="Trophy/cultist.webp" class="icon">
+                    <img src="Trophy/lord.webp" class="icon"><br><br>
+
+                    Here are the main bosses that each Terrarians would have to go through.
+                    </h2>     
+                </div>
+
+                
+                <div id="main-boss" style="background-image: url('BG/cave-bg.png'); background-position: center; background-size: contain; border-radius: 20px; border-style: outset">
+                    <h1 id="boss-name" style="text-align: center;">Select a Boss</h1>
+                    <div id="boss-display" style="width: 100%; height: 500px; background-color: #5a433a; display: none; border-radius: 20px; border-style: outset;
+                    overflow: auto;">
+                        
+                        <div id = "display-img" style="overflow: auto;"></div>
+                        <h2 id = display-desc></h2>
+                    </div>
+
+                    <div class="boss-div" id = slime; onclick="bossDisplay('slime')">
+                        <img src="TerraIcons/king.webp" class = boss-img>              
+                    </div>
+                    <div class="boss-div" id = eye; onclick="bossDisplay('eye')">
+                        <img src="TerraIcons/eye.webp"class = boss-img >
+                    </div>
+
+                    <div class="boss-div" id = eat; onclick="bossDisplay('eat')">
+                        <img src="TerraIcons/eater.webp"class = boss-img >
+                    </div>
+
+                    <div class="boss-div" id = brain; onclick="bossDisplay('brain')">
+                        <img src="TerraIcons/brain.webp"class = boss-img >
+                    </div>
+                    
+                    <div class="boss-div" id = bee; onclick="bossDisplay('bee')">
+                        <img src="TerraIcons/bee.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = skele; onclick="bossDisplay('skele')">
+                        <img src="TerraIcons/skele.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = deer; onclick="bossDisplay('deer')">
+                        <img src="TerraIcons/deer.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = wall; onclick="bossDisplay('wall')">
+                        <img src="TerraIcons/wall.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = queen; onclick="bossDisplay('queen')">
+                        <img src="TerraIcons/queen.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = destroy; onclick="bossDisplay('destroy')">
+                        <img src="TerraIcons/destroy.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = prime; onclick="bossDisplay('prime')">
+                        <img src="TerraIcons/skeleprime.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = twin; onclick="bossDisplay('twin')">
+                        <img src="TerraIcons/twin1.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = plant; onclick="bossDisplay('plant')">
+                        <img src="TerraIcons/plant.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = golem; onclick="bossDisplay('golem')">
+                        <img src="TerraIcons/golem.webp"class = boss-img >              
+                    </div>
+                    <div class="boss-div" id = duke; onclick="bossDisplay('duke')">
+                        <img src="TerraIcons/duke.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id=empress; onclick="bossDisplay('empress')">
+                        <img src="TerraIcons/empress.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id= cult; onclick="bossDisplay('cult')">
+                        <img src="TerraIcons/lunatic.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = pillar; onclick="bossDisplay('pillar')">
+                        <img src="TerraIcons/solar.webp"class = boss-img >
+                    </div>
+                    <div class="boss-div" id = lord; onclick="bossDisplay('lord')">
+                        <img src="TerraIcons/lord.webp"class = boss-img >
+                    </div>
+
+                    <script src="displayBoss.js"></script>
+
+                    
+
+                </div>
+
+                
+                
+            </div>
+
+            
+   
+        </body>
+</html>
